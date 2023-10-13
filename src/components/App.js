@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import '../styles/App.css';
 
 const App = () => {
@@ -7,8 +7,8 @@ const App = () => {
 
   return (
     <div className="ball">
-      <h1 className="count" onClick={() => { alert("get Lost") }}>{count}</h1>
-      <button className='increment-button' onClick={() => { setCount(0) }}>Increment</button>
+      <h1 className="count" onClick={() => alert("get lost") }>{count}</h1>
+      <button className='increment-button' onClick={() => setCount(count + 1) }>Increment</button>
     </div>
   )
 }
