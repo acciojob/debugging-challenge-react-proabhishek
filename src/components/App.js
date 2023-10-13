@@ -8,7 +8,7 @@ const App = () => {
   return (
     <div className="ball">
       <h1 className="count" onClick={() => alert("get lost") }>{count}</h1>
-      <button className='increment-button' onClick={() => setCount(count + 1) }>Increment</button>
+      <button className='increment-button' onClick={() => setCount(count) }>Increment</button>
     </div>
   )
 }
